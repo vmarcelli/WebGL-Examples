@@ -184,7 +184,7 @@ var main = function() {
     /*== DRAWING == */
     GL.enable(GL.DEPTH_TEST);
     GL.depthFunc(GL.LEQUAL);
-    GL.clearColor(0.5, 0.5, 0.5, 0.0); //Sets background to Gray
+    GL.clearColor(0.5, 0.5, 0.5, 1.0); //Sets background to Gray
     GL.clearDepth(1.0);
     
     var time_old=0;

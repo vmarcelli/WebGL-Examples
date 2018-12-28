@@ -142,13 +142,13 @@ var main = function() {
     
         0,1,5,
         0,4,5      
-      ];
+    ];
 
-      //This array contains the vertices for each
-      //point on the cube. On the left are the
-      //points and on the right is the color for each
-      //corresponding color
-      var cubeVertex=[
+    //This array contains the vertices for each
+    //point on the cube. On the left are the
+    //points and on the right is the color for each
+    //corresponding color
+    var cubeVertex=[
         l,b,n, 0,0,0,
         r,b,n, 1,0,0,
         r,t,n, 1,1,0,
@@ -157,7 +157,7 @@ var main = function() {
         r,b,f, 1,0,1,
         r,t,f, 1,1,1,
         l,t,f, 0,1,1
-      ];
+    ];
 
     var CUBE_VERTEX= GL.createBuffer ();
     GL.bindBuffer(GL.ARRAY_BUFFER, CUBE_VERTEX);
@@ -178,8 +178,8 @@ var main = function() {
     var VIEWMATRIX=LIBS.get_I4();
     
     LIBS.translateZ(VIEWMATRIX, -6);
-        var THETA=0,
-            PHI=0;
+    var THETA=0,
+        PHI=0;
     
     /*== DRAWING == */
     GL.enable(GL.DEPTH_TEST);
